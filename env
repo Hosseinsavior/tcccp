@@ -1,6 +1,6 @@
-SUDO_USERNAME = "admin"
-SUDO_PASSWORD = "admin"
-
+SUDO_USERNAME = "savior"
+SUDO_PASSWORD = "savi12"
+XRAY_HOSTs = "marz@185.176.43.98"
 UVICORN_HOST = "0.0.0.0"
 UVICORN_PORT = 8000
 
