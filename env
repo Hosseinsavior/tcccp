@@ -1,7 +1,11 @@
 SUDO_USERNAME = "admin"
 SUDO_PASSWORD = "admin"
 
-XRAY_HOSTS = "savior@sub"
-#XRAY_SUBSCRIPTION_URL_PREFIX = "server_ip:port"
+UVICORN_HOST = "0.0.0.0"
+UVICORN_PORT = 8000
+
+XRAY_JSON = "xray.json"
+XRAY_EXECUTABLE_PATH = "/usr/local/bin/xray"
+XRAY_ASSETS_PATH = "/usr/local/share/xray"
 UVICORN_SSL_CERTFILE = "/var/lib/marzban/certs/fullchain.pem"
 UVICORN_SSL_KEYFILE = "/var/lib/marzban/certs/key.pem"
