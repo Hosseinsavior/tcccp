@@ -45,8 +45,8 @@
                      "certificates": [
                          {
                              "ocspStapling": 3600,
-                             "certificateFile": "/etc/letsencrypt/live/savior128.c1.biz/fullchain.pem",
-                             "keyFile": "/etc/letsencrypt/live/savior128.c1.biz/privkey.pem"
+                             "certificateFile": "/var/lib/marzban/certs/fullchain.pem",
+                             "keyFile": "/var/lib/marzban/certs/key.pem"
                          }
                      ],
                      "minVersion": "1.2",
@@ -133,6 +133,52 @@
                     "http",
                     "tls"
                 ]
+            }
+        },
+        {
+            "tag": "TROJAN_GRPC_INBOUND",
+            "listen": "/run/xray-trojan-grpc.socket,0666",
+            "protocol": "trojan",
+            "settings": {
+                "clients": []
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "none",
+                "grpcSettings": {
+                    "serviceName": "tg"
+                }
+            }
+        },
+        {
+            "tag": "VLESS_GRPC_INBOUND",
+            "listen": "/run/xray-vless-grpc.socket,0666",
+            "protocol": "vless",
+            "settings": {
+                "clients": [],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "none",
+                "grpcSettings": {
+                    "serviceName": "lg"
+                }
+            }
+        },
+        {
+            "tag": "VMESS_GRPC_INBOUND",
+            "listen": "/run/xray-vmess-grpc.socket,0666",
+            "protocol": "vmess",
+            "settings": {
+                "clients": []
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "none",
+                "grpcSettings": {
+                    "serviceName": "mg"
+                }
             }
         }
     ],
