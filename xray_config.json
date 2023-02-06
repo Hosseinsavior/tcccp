@@ -41,7 +41,7 @@
                  "network": "tcp",
                  "security": "tls",
                  "tlsSettings": {
-                     "serverName": "SERVER_NAME",
+                     "serverName": "savior128.c1.biz",
                      "certificates": [
                          {
                              "ocspStapling": 3600,
