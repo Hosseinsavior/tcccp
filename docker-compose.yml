@@ -15,6 +15,7 @@
       - ./xray_config.json:/xray_config.json
       - /var/lib/marzban:/var/lib/marzban
       - /etc/letsencrypt/:/etc/letsencrypt
+      - /usr/local/share/xray:/usr/local/share/xray
 
     ports:
       - "443:443"
