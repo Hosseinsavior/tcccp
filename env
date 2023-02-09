@@ -1,5 +1,5 @@
-SUDO_USERNAME = "admin"
-SUDO_PASSWORD = "admin"
+SUDO_USERNAME = "adsavi"
+SUDO_PASSWORD = "112221"
 
 XRAY_HOSTS = "marz@127.0.0.1"
 # Fast-VPN IP@192.168.1.1
