@@ -1,16 +1,12 @@
-SUDO_USERNAME = "savior"
-SUDO_PASSWORD = "savi12"
-XRAY_HOSTS = "AC@127.0.0.1"
-UVICORN_HOST = "0.0.0.0"
-UVICORN_PORT = 8000
+SUDO_USERNAME = "admin"
+SUDO_PASSWORD = "admin"
 
-XRAY_JSON = "xray.json"
-XRAY_EXECUTABLE_PATH = "/usr/local/bin/xray"
-XRAY_ASSETS_PATH = "/usr/local/share/xray"
-UVICORN_SSL_CERTFILE = "/var/lib/marzban/certs/fullchain.pem"
-UVICORN_SSL_KEYFILE = "/var/lib/marzban/certs/key.pem"
-#XRAY_EXCLUDE_INBOUND_TAGS = "
-#TROJAN_FALLBACK_INBOUND
-#VLESS_TCP_INBOUND
-#VMESS_TCP_INBOUND
-"
+# XRAY_HOSTS = "
+# Fast-VPN Domain@example.com
+# Fast-VPN IP@192.168.1.1
+# "
+
+# XRAY_SUBSCRIPTION_URL_PREFIX = "https://example.com"
+
+# UVICORN_SSL_CERTFILE = "/var/lib/marzban/certs/fullchain.pem"
+# UVICORN_SSL_KEYFILE = "/var/lib/marzban/certs/key.pem"
