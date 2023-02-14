@@ -4,8 +4,16 @@ SUDO_PASSWORD = "112221"
 XRAY_HOSTS = "marz@127.0.0.1"
 # Fast-VPN IP@192.168.1.1
 # "
-
-# XRAY_SUBSCRIPTION_URL_PREFIX = "https://example.com"
-
+XRAY_SUBSCRIPTION_URL_PREFIX="server_ip:port"
+XRAY_EXCLUDE_INBOUND_TAGS = "
+TROJAN_FALLBACK_INBOUND
+VLESS_TCP_INBOUND
+VMESS_TCP_INBOUND
+"
 UVICORN_SSL_CERTFILE = "/var/lib/marzban/certs/fullchain.pem"
 UVICORN_SSL_KEYFILE = "/var/lib/marzban/certs/key.pem"
+
+DOCS = True
+
+
+
